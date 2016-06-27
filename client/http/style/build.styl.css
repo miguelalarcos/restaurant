@@ -1,0 +1,392 @@
+ul.menu {
+  list-style-type: none;
+  padding: 0;
+}
+li.menu-item {
+  float: left;
+}
+li.menu-item a {
+  display: block;
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li.menu-item a:hover:not(.active) {
+  background-color: #111;
+}
+li.menu-item.active a {
+  background-color: #ff8c00;
+}
+ul.menu:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+span.autocomplete-box {
+  position: relative;
+  background-color: #fff;
+}
+div.autocomplete-popover {
+  z-index: 1000;
+  cursor: pointer;
+  background-color: #fff;
+  position: absolute;
+  left: 0px;
+}
+div.autocomplete-selected {
+  background-color: #000;
+  color: #fff;
+}
+span.auto-multiple {
+  border: 1px solid #000;
+}
+
+.item {
+  width: 200px;
+  height: 200px;
+  border: 2px solid #000;
+  text-align: center;
+  background-color: #008000;
+  color: #fff;
+}
+
+
+.save {
+  color: #008000;
+  cursor: pointer;
+  text-align: left;
+}
+.discard,
+.rdiscard {
+  color: #f00;
+  cursor: pointer;
+  text-align: right;
+}
+
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid #fdca96;
+}
+.popover {
+  position: absolute;
+  width: 150px;
+}
+.popover.inactive {
+  height: 0px;
+  visibility: hidden;
+}
+.popover.active {
+  height: 50px;
+  visibility: visible;
+}
+.popover .content {
+  background-color: #fdca96;
+}
+.popover .box {
+  border-color: #f08080;
+}
+.popover .close {
+  background-color: #fdca96;
+  text-align: right;
+  cursor: pointer;
+}
+
+.demo-container {
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  display: flex;
+  flex-direction: row;
+}
+.demo-container > div {
+  -webkit-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+input,
+textarea {
+  border: 1px #808080;
+  border-style: none none solid none;
+}
+.input-successful {
+  border-color: #008000;
+  border-width: 2px;
+}
+.input-incorrect {
+  color: #f08080;
+  border-color: #f00;
+  border-width: 2px;
+}
+.input-dirty {
+  background-color: #fdca96;
+}
+
+.no-display {
+  display: none;
+}
+
+.error {
+  color: #cd5c5c;
+  font-style: italic;
+}
+
+.modal {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,255,0.5);
+}
+.modal-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 2px solid #2e8b57;
+}
+
+div.notification {
+  cursor: pointer;
+  color: #fff;
+}
+div.notification.ok {
+  background-color: #8fbc8f;
+}
+div.notification.error {
+  background-color: #cd5c5c;
+}
+div.notification.info {
+  background-color: #b8860b;
+}
+
+triage-closed {
+  background-color: #000;
+  color: #fff;
+}
+a.hidden {
+  display: none;
+}
+tr:hover > a.hidden {
+  display: inline;
+}
+
+.button-active {
+  background-color: #fff;
+  color: #000;
+}
+
+.montserrat {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+i {
+  cursor: pointer;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.table-red {
+  cursor: pointer;
+  margin-right: 2cm;
+  background-color: #cd5c5c;
+}
+.table-green {
+  cursor: pointer;
+  margin-right: 2cm;
+  background-color: #90ee90;
+}
+
+ul.menu {
+  list-style-type: none;
+  padding: 0;
+}
+li.menu-item {
+  float: left;
+}
+li.menu-item a {
+  display: block;
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li.menu-item a:hover:not(.active) {
+  background-color: #111;
+}
+li.menu-item.active a {
+  background-color: #ff8c00;
+}
+ul.menu:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+span.autocomplete-box {
+  position: relative;
+  background-color: #fff;
+}
+div.autocomplete-popover {
+  z-index: 1000;
+  cursor: pointer;
+  background-color: #fff;
+  position: absolute;
+  left: 0px;
+}
+div.autocomplete-selected {
+  background-color: #000;
+  color: #fff;
+}
+span.auto-multiple {
+  border: 1px solid #000;
+}
+
+.item {
+  width: 200px;
+  height: 200px;
+  border: 2px solid #000;
+  text-align: center;
+  background-color: #008000;
+  color: #fff;
+}
+
+
+.save {
+  color: #008000;
+  cursor: pointer;
+  text-align: left;
+}
+.discard,
+.rdiscard {
+  color: #f00;
+  cursor: pointer;
+  text-align: right;
+}
+
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid #fdca96;
+}
+.popover {
+  position: absolute;
+  width: 150px;
+}
+.popover.inactive {
+  height: 0px;
+  visibility: hidden;
+}
+.popover.active {
+  height: 50px;
+  visibility: visible;
+}
+.popover .content {
+  background-color: #fdca96;
+}
+.popover .box {
+  border-color: #f08080;
+}
+.popover .close {
+  background-color: #fdca96;
+  text-align: right;
+  cursor: pointer;
+}
+
+.demo-container {
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  display: flex;
+  flex-direction: row;
+}
+.demo-container > div {
+  -webkit-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+input,
+textarea {
+  border: 1px #808080;
+  border-style: none none solid none;
+}
+.input-successful {
+  border-color: #008000;
+  border-width: 2px;
+}
+.input-incorrect {
+  color: #f08080;
+  border-color: #f00;
+  border-width: 2px;
+}
+.input-dirty {
+  background-color: #fdca96;
+}
+
+.no-display {
+  display: none;
+}
+
+.error {
+  color: #cd5c5c;
+  font-style: italic;
+}
+
+.modal {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,255,0.5);
+}
+.modal-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 2px solid #2e8b57;
+}
+
+div.notification {
+  cursor: pointer;
+  color: #fff;
+}
+div.notification.ok {
+  background-color: #8fbc8f;
+}
+div.notification.error {
+  background-color: #cd5c5c;
+}
+div.notification.info {
+  background-color: #b8860b;
+}
+
+triage-closed {
+  background-color: #000;
+  color: #fff;
+}
+a.hidden {
+  display: none;
+}
+tr:hover > a.hidden {
+  display: inline;
+}
+
+.button-active {
+  background-color: #fff;
+  color: #000;
+}
+

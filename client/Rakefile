@@ -1,0 +1,37 @@
+require 'opal'
+require 'opal-browser'
+require 'reactive-ruby'
+#require 'uglifier'
+
+desc "Build our app to build.js in development mode"
+task :development do
+  Opal.append_path "."
+  Opal.append_path ".."
+  Opal.use_gem 'bull'
+  builder = Opal::Builder.new
+  build_js = builder.build("main.rb").to_s
+  File.write(File.join('http', 'build.js'), build_js)
+
+end
+
+desc "clean"
+task :clean do
+  File.delete File.join('http', 'build.css') if File.exist? File.join('http', 'build.css')
+  #File.delete File.join('..', 'style', 'build.styl.css') if File.exist? File.join('..', 'style', 'build.styl.css')
+end
+
+desc "stylus compile"
+task :stylus => [:clean] do
+  files = Dir.glob(File.join("http", "style", "**", "*.styl"))
+  dest = File.join('http', 'style', 'build.styl.css')
+  files.each do |f|
+    `stylus < #{f} >> #{dest}`
+  end
+end
+
+desc "concatenate css to build.css"
+task :css => [:stylus] do
+  files = Dir.glob(File.join("http", "style", "**", "*.css")).join(' ')
+  dest = File.join('http', 'build.css')
+  `cat #{files} > #{dest}` if files != ''
+end
