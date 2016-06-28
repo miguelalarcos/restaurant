@@ -9,8 +9,5 @@ gem 'em-http-request'
 gem 'liquid'
 gem 'bull'
 
-#gem "opal", "0.8.0"
-#gem "reactive-ruby"
-#gem "uglifier"
-#gem "webrick"
+
 

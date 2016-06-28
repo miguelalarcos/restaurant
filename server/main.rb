@@ -84,4 +84,6 @@ class AppController < BullServerController
   end
 end
 
-start AppController
+MReport.load_reports File.expand_path('..')
+
+start AppController, File.expand_path('..')
